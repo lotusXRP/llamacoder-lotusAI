@@ -1,27 +1,42 @@
-<a href="https://www.llamacoder.io">
-  <img alt="Llama Coder" src="./public/og-image.png">
-  <h1 align="center">Llama Coder</h1>
-</a>
 
-<p align="center">
-  An open source Claude Artifacts – generate small apps with one prompt. Powered by Llama 3 on Together.ai.
-</p>
+# llamacoder-lotusAI
 
-## Tech stack
+Open source Claude Artifacts – built with Llama 3.1 405B
 
-- [Llama 3.1 405B](https://ai.meta.com/blog/meta-llama-3-1/) from Meta for the LLM
-- [Together AI](https://togetherai.link/?utm_source=example-app&utm_medium=llamacoder&utm_campaign=llamacoder-app-signup) for LLM inference
-- [Sandpack](https://sandpack.codesandbox.io/) for the code sandbox
-- Next.js app router with Tailwind
-- Helicone for observability
-- Plausible for website analytics
+## Features
 
-## Cloning & running
+- Feature 1
+- Feature 2
+- Feature 3
 
-1. Clone the repo: `git clone https://github.com/Nutlope/llamacoder`
-2. Create a `.env` file and add your [Together AI API key](https://togetherai.link/?utm_source=example-app&utm_medium=llamacoder&utm_campaign=llamacoder-app-signup): `TOGETHER_API_KEY=`
-3. Run `npm install` and `npm run dev` to install dependencies and run locally
+## Installation
+
+```bash
+npm install
+# or
+pip install -e .
+```
+
+## Usage
+
+[Usage examples]
+
+## Development
+
+```bash
+npm run dev
+npm run test
+npm run lint
+```
 
 ## Contributing
 
-For contributing to the repo, please see the [contributing guide](./CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Security
+
+See [SECURITY.md](SECURITY.md)
+
+## License
+
+MIT
