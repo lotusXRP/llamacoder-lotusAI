@@ -37,28 +37,26 @@ export default async function Image({
     : "An app generated on LlamaCoder.io";
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      {/* @ts-expect-error */}
+      <img src={backgroundSrc} height="100%" alt="" />
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          position: "absolute",
+          fontSize: 50,
+          color: "black",
+          padding: "50px 200px",
         }}
       >
-        {/* @ts-expect-error */}
-        <img src={backgroundSrc} height="100%" alt="" />
-        <div
-          style={{
-            position: "absolute",
-            fontSize: 50,
-            color: "black",
-            padding: "50px 200px",
-          }}
-        >
-          {title}
-        </div>
+        {title}
       </div>
-    ),
+    </div>,
     {
       width: 1200,
       height: 630,
