@@ -39,7 +39,7 @@ export default function Home() {
   const [isPending, startTransition] = useTransition();
 
   const { uploadToS3 } = useS3Upload();
-  const handleScreenshotUpload = async (event: any) => {
+  const handleScreenshotUpload = async (event: unknown) => {
     if (prompt.length === 0) setPrompt("Build this");
     setQuality("low");
     setScreenshotLoading(true);

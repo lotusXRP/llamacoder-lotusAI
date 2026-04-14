@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
   serverExternalPackages: ["@codesandbox/sdk"],
   webpack: (config, options) => {
     if (options.nextRuntime === "edge") {

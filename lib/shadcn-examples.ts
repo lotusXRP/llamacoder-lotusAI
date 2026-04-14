@@ -463,7 +463,7 @@ export default function HistoryQuiz() {
   const [showExplanation, setShowExplanation] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
 
-  const questions: Question[] = [
+  const questions: readonly Question[] = [
     {
       question: "In which year was the Declaration of Independence signed?",
       options: ["1774", "1775", "1776", "1777"],
